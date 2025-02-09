@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatRoom Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="Screen JoinScreen active">
+            <div class="form">
+                <h2>Join ChatRoom Global</h2>
+                <div class="input">
+                    <label>Username</label>
+                    <input type="text" id="Username">
+                </div>
+                <div class="joingButton">
+                    <button id="joinButton">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class=" Screen ChatScreen ">
+            <div class="headerTop">
+                <div class="logo">ChatRoom Global</div>
+                <button id="Exit">Exit</button>
+            </div>
+            <div class="messages">
+                
+            <div class="messageBox">
+                <input type="text" id="messageBox">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
